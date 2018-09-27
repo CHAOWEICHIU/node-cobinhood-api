@@ -1,0 +1,6 @@
+node_modules
+try.js
+.next
+.idea
+.vscode
+.env
