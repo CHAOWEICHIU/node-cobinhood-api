@@ -17,6 +17,12 @@ Promise
 # Node API
 This project is designed to help you make your own projects that interact with the [COBINHOOD API](https://cobinhood.github.io/api-public/). You can stream candlestick chart data, market depth, or use other advanced features such as setting stop losses and iceberg orders.
 
+# Get Started
+\`\`\`js
+const COBINHOOD = require('node-cobinhood-api')
+const cobinhood = new COBINHOOD({})
+\`\`\`
+
 \`\`\`js
 cobinhood.prices({ pairs: ['ETH-BTC'] })
 \`\`\`
@@ -30,11 +36,6 @@ ${JSON.stringify(prices, null, 2)}
 </details>
 
   `
-
-  console.log(README);
-  
-
-
 
   fs.unlinkSync(README_LOCATION)
   fs.writeFileSync(README_LOCATION, README, 'utf8')
